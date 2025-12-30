@@ -56,6 +56,6 @@ Ubuntu 24.04
 
 このパッケージのコードの一部は、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）を参考に作成しています。
 
-ryuichiueda/my_slides robosys_2025
+ - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
 
-© 2025 Yamamoto Junpei
+© 2025 Junpei Yamamoto
