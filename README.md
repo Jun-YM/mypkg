@@ -14,9 +14,14 @@ Ubuntuネイティブ環境ではnmcliを用いてWi‑Fi 強度を取得しま�
 -70dBmを下回ると警告を出します。
 
 ##準備
-- このリポジトリをターミナルで下記のようにクローンして>ください。
+- このリポジトリをターミナルで下記のようにクローンしワークスペース上に配置、ビルドを行ってください
 ```
 git clone https://github.com/Jun-YM/mypkg.git
+cd ~/ros2_ws/src
+mv ~/mypkg .
+cd ~/ros2_ws
+colcon build --symlink-install
+source install/setup.bash
 ```
 ## 使い方
 - 実行方法、実行結果の例
