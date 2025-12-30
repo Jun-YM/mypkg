@@ -10,11 +10,11 @@
 WSL環境ではWindows側のWi‑Fi情報を取得し、
 Ubuntuネイティブ環境ではnmcliを用いてWi‑Fi 強度を取得します。
 
-取得したRSSIは/wifi_signal トピックとしてpublishされ、
+取得したRSSIは/wifi_signalトピックとしてpublishされ、
 -70dBmを下回ると警告を出します。
 
 ## 準備
-- このリポジトリをターミナルで下記のようにクローンしワークスペース上に配置、ビルドを行ってください
+- このリポジトリをターミナルで下記のようにクローンし、ワークスペース上に配置、ビルドを行ってください
 ```
 git clone https://github.com/Jun-YM/mypkg.git
 cd ~/ros2_ws/src
@@ -23,16 +23,19 @@ cd ~/ros2_ws
 colcon build --symlink-install
 source install/setup.bash
 ```
+
 ## 使い方
 - 実行方法、実行結果の例
 ```
 ros2 launch mypkg wifi_monitor.launch.py
-Published Wi-Fi signal: -43 dBm
+[wifi_signal_publisher-1] [INFO] [1767121170.899404514] [wifi_signal_publisher]: Published Wi-Fi signal: -48 dBm
 ```
 -70dBmを下回ると
 ```
-Warning: Wi-Fi signal is weak! (-82 dBm)
+[wifi_signal_publisher-1] [INFO] [1767121170.899404514] [wifi_signal_publisher]: Published Wi-Fi signal: -100 dBm
+[wifi_alert_node-2] [WARN] [1767121170.900465406] [wifi_alert_node]: Warning: Wi-Fi signal is weak (-100 dBm)
 ```
+
 ## 必要なソフトウェア
 - ROS 2 Humble
 
