@@ -7,9 +7,6 @@
 本パッケージは、ROS2を用いてWi‑Fiの受信信号強度（RSSI）を取得し、
 その値を監視・通知するシステムです。
 
-WSL環境ではWindows側のWi‑Fi情報を取得し、
-Ubuntuネイティブ環境ではnmcliを用いてWi‑Fi 強度を取得します。
-
 取得したRSSIは/wifi_signalトピックとしてpublishされ、
 -70dBmを下回ると警告を出します。
 
@@ -50,7 +47,7 @@ ros2 launch mypkg wifi_monitor.launch.py
 Ubuntu 22.04.5 LTS
 
 
-リモート環境:
+* リモート環境:
 
 Ubuntu 24.04
 
