@@ -10,7 +10,9 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', ['launch/wifi_monitor.launch.py']),
     ],
+
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='jun0606',
@@ -24,8 +26,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-             'talker = mypkg.talker:main', #talker.pyのmain関数という意味
-            'listener = mypkg.listener:main',
+             'wifi_signal_publisher = mypkg.wifi_signal_publisher:main', #talker.pyのmain関数という意味
+            'wifi_alert_node = mypkg.wifi_alert_node:main',
         ],
     },
 )
