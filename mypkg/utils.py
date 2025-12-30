@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 Junpei Yamamoto
+# SPDX-License-Identifier: BSD-3-Clause
+
 import subprocess
 import platform
 import re
