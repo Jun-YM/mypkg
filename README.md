@@ -34,7 +34,7 @@ ros2 launch mypkg wifi_monitor.launch.py
 ```
 
 ## 必要なソフトウェア
-- ROS 2 Humble
+- ROS_2
 
 - Python 3.10
 
