@@ -53,6 +53,6 @@ Ubuntu 24.04
 このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
 
 このパッケージのコードの一部は、下記のスライドを参考に作成しています。
-(https://ryuichiueda.github.io/slides_marp/robosys2025)
+(https://ryuichiueda.github.io/slides_marp/robosys2025/lesson10.html)
 
 © 2025 Junpei Yamamoto
