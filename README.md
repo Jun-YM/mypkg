@@ -10,16 +10,14 @@
 取得したRSSIは/wifi_signalトピックとしてpublishされ、
 -70dBmを下回ると警告を出します。
 
-## 準備
-- このリポジトリをターミナルで下記のようにクローンし、ワークスペース上に配置、ビルドを行ってください
-```
-git clone https://github.com/Jun-YM/mypkg.git
-cd ~/ros2_ws/src
-mv ~/mypkg .
-cd ~/ros2_ws
-colcon build --symlink-install
-source install/setup.bash
-```
+# 使用しているトピック
+ノード名:wifi_signal_publisher
+トピック名:wifi_signal
+型:std_msgs/msg/Int32
+
+ノード名:wifi_alert_node
+トピック名:wifi_signal	
+型:std_msgs/msg/Int32
 
 ## 使い方
 - 実行方法、実行結果の例
@@ -34,7 +32,7 @@ ros2 launch mypkg wifi_monitor.launch.py
 ```
 
 ## 必要なソフトウェア
-- ROS_2
+- ROS2
 
 - Python 3.10
 
@@ -52,10 +50,9 @@ Ubuntu 22.04.5 LTS
 Ubuntu 24.04
 
 ## ライセンス
-このソフトウェアパッケージは、3 条項 BSD ライセンスの下、再頒布および使用が許可されます。
+このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
 
-このパッケージのコードの一部は、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）を参考に作成しています。
-
- - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
+このパッケージのコードの一部は、下記のスライドを参考に作成しています。
+(https://ryuichiueda.github.io/slides_marp/robosys2025)
 
 © 2025 Junpei Yamamoto
