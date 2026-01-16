@@ -12,6 +12,7 @@ def generate_launch_description():
             executable='wifi_signal_publisher',
             name='wifi_signal_publisher',
             output='screen'
+            emulate_tty=True
         ),
         Node(
             package='mypkg',
@@ -19,6 +20,7 @@ def generate_launch_description():
             name='wifi_alert_node',
             parameters=[{'threshold': -70}],
             output='screen'
+            emulate_tty=True
         )
     ])
 
