@@ -9,15 +9,7 @@
 
 取得したRSSIは/wifi_signalトピックとしてpublishされ、
 -70dBmを下回ると警告を出します。
-
-# 使用しているトピック
-ノード名:wifi_signal_publisher
-トピック名:wifi_signal
-型:std_msgs/msg/Int32
-
-ノード名:wifi_alert_node
-トピック名:wifi_signal	
-型:std_msgs/msg/Int32
+また、トピックの型はstd_msgs/msg/Int32です。
 
 ## 使い方
 - 実行方法、実行結果の例
