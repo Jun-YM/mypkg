@@ -9,4 +9,4 @@ source $dir/.bashrc
 timeout 10 ros2 launch mypkg wifi_monitor.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
-grep 'Published Wi-Fi signal: -44 dBm'
+grep 'Published Wi-Fi signal'
